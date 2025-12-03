@@ -1,8 +1,10 @@
 "use client";
 
+
 import { div } from "framer-motion/client";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Image from "next/image"
 
 type NavLink = {
   label: string;
@@ -46,12 +48,16 @@ export default function Navbar() {
       <div className="flex items-center justify-between px-[8%] lg:px-[12%] py-5">
         <div className="flex items-center gap-5">
           {/* Logo */}
-          <Link
-            href="/"
-            className="text-5xl font-bold Audiowide text-(--black)"
-          >
-            Nat<span className="text-(--prim)">ure</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/navbar-logo.png" // letakkan file logo di folder public/logo.png
+              alt="Nature Logo"
+              width={120} // sesuaikan ukuran
+              height={40}
+              className="object-contain"
+            />
           </Link>
+
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex space-x-6 menu-link relative ms-10">

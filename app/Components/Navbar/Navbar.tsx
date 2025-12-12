@@ -147,8 +147,67 @@ export default function Navbar() {
         </div>
       </div>
 
-      
-
+      {/* Mobile Menu */}
+      <div
+        className={`lg;hidden bg-(--white) border-t border-gray-400 overflow-hidden transition-all duration-500 ${
+          mobileMenuOpen
+            ? "max-h-[700px] opacity-100 py-4"
+            : "max-h-0 opacity-0 py-0"
+        }`}
+      >
+        <div className="px-[8%] space-y-3">
+          {navLinks.map((link) => (
+            <div
+              key={link.label}
+              className="border border-gray-700/50 rounded-lg overflow-hidden"
+            >
+              {link.dropdown ? (
+                <>
+                  <button
+                    onClick={() => toggleDropdown(link.label)}
+                    className="w-full flex justify-between items-center px-4 py-3 text-left text-(--text) font-medium hover:text-(--prim) transition"
+                  >
+                    {link.label}
+                    <i
+                      className={`ri-arrow-down-s-line transition-transform duration-300 ${
+                        openDropdowns[link.label] ? "rotate-180" : ""
+                      }`}
+                    ></i>
+                  </button>
+                  <div
+                    className={`pl-6 pr-4 bg-gray-800/10 border-t border-gray-700/40 transition-all duration-500 ${
+                      openDropdowns[link.label]
+                        ? "max-h-[300px] opacity-100 py-2"
+                        : "max-h-0 opacity-0 py-0"
+                    }`}
+                  >
+                    {link.dropdown.map((item) => (
+                      <Link
+                        key={item.label}
+                        href={item.href}
+                        className="block py-2 font-semibold hover:text-(--prim) transition
+                    border-b border-gray-700/60"
+                        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                      >
+                        {item.label}
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              ) : (
+                <Link
+                  href={link.href}
+                  className="block px-4 py-3 text-(--text) hover:text-(--prim-color)
+                transition font-medium"
+                  onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                >
+                  {link.label}
+                </Link>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

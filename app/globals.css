@@ -55,5 +55,32 @@ body{
 .hero:after{
     content: '';
     position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url(../public/Hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    z-index: -1;
+    opacity:calc(40%)
+}
+
+.hero-span{
+    position: relative;
+}
+
+.hero-span:after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50% , -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: var(--prim);
 }
 

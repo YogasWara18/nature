@@ -18,6 +18,7 @@ export default function Hero() {
                 <span className="hero-span border border-gray-400 GolosText font-bold px-5 py-2 rounded-full">
                   Trusted Design Partner
                 </span>
+                <h1 className="text-6xl lg:text-7xl CalSans my-5">Find Your Inspired <span className="text-(--prim)">Interior Design</span></h1>
               </div>
             </div>
           </div>

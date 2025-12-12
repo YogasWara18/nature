@@ -36,3 +36,24 @@ body{
     font-family: var(--Audiowide);
 }
 
+/* Navbar */
+.menu-link a{
+    font-weight: 500;
+    font-family: var(--GolosText);
+}
+
+/* Hero Header */
+.hero{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero:after{
+    content: '';
+    position: absolute;
+}
+

@@ -84,3 +84,26 @@ body{
     background-color: var(--prim);
 }
 
+.hero-bg-elm{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translate(-50% , -50%);
+    width: 400px;
+    height: 400px;
+    background-color: var(--white);
+    border-radius: 100%;
+    box-shadow: 0 0 40px rgba(131, 131, 131, 0.1); 
+}
+
+.hero-bg-elm2{
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    transform: translate(-50% , -50%);
+    width: 770px;
+    height: 700px;
+    background-color: rgba(195, 195, 195, 0.3);
+    border-radius: 100%;
+    box-shadow: 0 0 40px rgba(131, 131, 131, 0.1); 
+}

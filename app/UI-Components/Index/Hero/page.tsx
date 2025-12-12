@@ -16,9 +16,9 @@ export default function Hero() {
             <div className="w-full lg:w-1/2 relative">
               <div className="">
                 <span className="hero-span border border-gray-400 GolosText font-bold px-5 py-2 rounded-full">
-                  Trusted Design Partner
+                  Natural Timeless Desirable
                 </span>
-                <h1 className="text-6xl lg:text-7xl CalSans my-5">Find Your Inspired <span className="text-(--prim)">Interior Design</span></h1>
+                <h1 className="text-6xl lg:text-7xl CalSans my-5">Living in Harmony <span className="text-(--prim)">With NATURE</span></h1>
               </div>
             </div>
           </div>

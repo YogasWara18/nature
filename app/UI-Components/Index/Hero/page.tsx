@@ -6,6 +6,12 @@ import HeroImg from "@/public/Hero-img.jpg";
 import HeroImg2 from "@/public/hero-img2.png";
 import Link from "next/link";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+
+import partner1 from
+
 export default function Hero() {
   const [showVideo, setShowVideo] = useState(false);
   return (
@@ -79,6 +85,10 @@ export default function Hero() {
           </div>
         </div>
       )}
+       <div className="px-[8%] lg:px-[12%] pb-10">
+
+      </div>
+
     </>
   );
 }

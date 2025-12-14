@@ -4,6 +4,16 @@ import Image from "next/image";
 import AboutImg1 from "@/public/About-1.jpg"
 import AboutImg2 from "@/public/About-2.jpg"
 import AboutImg3 from "@/public/About-3.jpg"
+import CountUp from "react-countup";
+
+const statsData = [
+    {
+        value: 2013,
+        suffix: "",
+        title: "Years experience",
+        desc: "Improving homes with expert craftsmanship for year"
+    }
+];
 
 export default function About() {
   return (
@@ -28,6 +38,22 @@ export default function About() {
                 <Image src={AboutImg3} alt="About-img" className="rounded-3xl transition-all duration-300 hover:-translate-y-1.5"/>
             </div>
         </div>
+      </div>
+      <div className="px-[8%] lg:px-[12%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {statsData.map((item, index) => (
+            <div key={index} className="about-card">
+                <h2 className="text-5xl tracking-wider CalSans font-bold mb-6">
+                    <CountUp
+                    start={0}
+                    end={item.value}
+                    duration={2.5}
+                    enableScrollSpy
+                    />
+                    {item.suffix}
+                </h2>
+                
+            </div>
+        ))}
       </div>
     </>
   )

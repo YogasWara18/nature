@@ -142,7 +142,7 @@ body {
 /* About Section */
 
 .about {
-  position: relative; /* penting agar pseudo-element bisa diposisikan */
+  position: relative; 
   z-index: 1;
 }
 

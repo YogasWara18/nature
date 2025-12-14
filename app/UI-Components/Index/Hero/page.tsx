@@ -10,7 +10,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import partner1 from
+import partner1 from "@/public/partner1.jpg"
+import partner2 from "@/public/partner2.jpg"
+import partner3 from "@/public/partner3.jpg"
+import partner4 from "@/public/partner4.jpg"
+import partner5 from "@/public/partner5.jpg"
+import partner6 from "@/public/partner6.jpg"
+
+const Partners = [partner1, partner2, partner3, partner4, partner5, partner6];
 
 export default function Hero() {
   const [showVideo, setShowVideo] = useState(false);
@@ -86,7 +93,32 @@ export default function Hero() {
         </div>
       )}
        <div className="px-[8%] lg:px-[12%] pb-10">
-
+        <Swiper
+         slidesPerView={5}
+         spaceBetween={30}
+         loop={true}
+         autoplay={{
+          delay: 1500
+         }}
+        modules={[Autoplay]}
+        breakpoints={{
+          1200: {slidesPerView: 5}, 
+          991: {slidesPerView: 4}, 
+          575: {slidesPerView: 2}, 
+          0: {slidesPerView: 2}, 
+        }}
+        className="partner-swiper"
+        >
+          {Partners.map((img, index) => (
+            <SwiperSlide key={index}>
+              <Image
+              src={img}
+              alt="PartnerImage"
+              className="partner-img"
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
     </>

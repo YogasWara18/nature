@@ -10,12 +10,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import partner1 from "@/public/partner1.png"
-import partner2 from "@/public/partner2.png"
-import partner3 from "@/public/partner3.png"
-import partner4 from "@/public/partner4.png"
-import partner5 from "@/public/partner5.png"
-import partner6 from "@/public/partner6.png"
+import partner1 from "@/public/partner1.png";
+import partner2 from "@/public/partner2.png";
+import partner3 from "@/public/partner3.png";
+import partner4 from "@/public/partner4.png";
+import partner5 from "@/public/partner5.png";
+import partner6 from "@/public/partner6.png";
 
 const Partners = [partner1, partner2, partner3, partner4, partner5, partner6];
 
@@ -93,35 +93,37 @@ export default function Hero() {
         </div>
       )}
 
-       <div className="px-[8%] lg:px-[12%] pb-10">
+      <div className="px-[8%] lg:px-[12%] pb-10">
         <Swiper
-         slidesPerView={5}
-         spaceBetween={30}
-         loop={true}
-         autoplay={{
-          delay: 1500
-         }}
-        modules={[Autoplay]}
-        breakpoints={{
-          1200: {slidesPerView: 5}, 
-          991: {slidesPerView: 4}, 
-          575: {slidesPerView: 2}, 
-          0: {slidesPerView: 2}, 
-        }}
-        className="partner-swiper"
+          slidesPerView={5}
+          spaceBetween={30}
+          loop={true}
+          autoplay={{
+            delay: 1500,
+          }}
+          modules={[Autoplay]}
+          breakpoints={{
+            1200: { slidesPerView: 5 },
+            991: { slidesPerView: 4 },
+            575: { slidesPerView: 2 },
+            0: { slidesPerView: 2 },
+          }}
+          className="partner-swiper"
         >
           {Partners.map((img, index) => (
-            <SwiperSlide key={index} className="flex items-center justify-center"> 
+            <SwiperSlide
+              key={index}
+              className="flex items-center justify-center"
+            >
               <Image
-              src={img}
-              alt="PartnerImage"
-              className="partner-img partner-img"
+                src={img}
+                alt="PartnerImage"
+                className="partner-img partner-img"
               />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-
     </>
   );
 }

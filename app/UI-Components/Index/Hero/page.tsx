@@ -10,12 +10,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import partner1 from "@/public/partner1.jpg"
-import partner2 from "@/public/partner2.jpg"
-import partner3 from "@/public/partner3.jpg"
-import partner4 from "@/public/partner4.jpg"
-import partner5 from "@/public/partner5.jpg"
-import partner6 from "@/public/partner6.jpg"
+import partner1 from "@/public/partner1.png"
+import partner2 from "@/public/partner2.png"
+import partner3 from "@/public/partner3.png"
+import partner4 from "@/public/partner4.png"
+import partner5 from "@/public/partner5.png"
+import partner6 from "@/public/partner6.png"
 
 const Partners = [partner1, partner2, partner3, partner4, partner5, partner6];
 
@@ -92,6 +92,7 @@ export default function Hero() {
           </div>
         </div>
       )}
+
        <div className="px-[8%] lg:px-[12%] pb-10">
         <Swiper
          slidesPerView={5}
@@ -110,11 +111,11 @@ export default function Hero() {
         className="partner-swiper"
         >
           {Partners.map((img, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="flex items-center justify-center"> 
               <Image
               src={img}
               alt="PartnerImage"
-              className="partner-img"
+              className="partner-img partner-img"
               />
             </SwiperSlide>
           ))}

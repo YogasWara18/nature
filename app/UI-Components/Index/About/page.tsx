@@ -8,11 +8,29 @@ import CountUp from "react-countup";
 
 const statsData = [
     {
-        value: 2013,
+        value: 2015,
         suffix: "",
         title: "Years experience",
         desc: "Improving homes with expert craftsmanship for year"
-    }
+    },
+    {
+        value: 190,
+        suffix: "+",
+        title: "Projects completed",
+        desc: "Over 250 successfull projects delivered with quality and care",
+    },
+    {
+        value: 260,
+        suffix: "+",
+        title: "Skilled Tradespeople",
+        desc: "Our team of 30 experts ensures top-quality results",
+    },
+    {
+        value: 328,
+        suffix: "+",
+        title: "Client satisfaction",
+        desc: "All of our clients are satidfied with our work service",
+    },
 ];
 
 export default function About() {
@@ -51,7 +69,10 @@ export default function About() {
                     />
                     {item.suffix}
                 </h2>
-                
+                <div className="about-content py-6 border-t border-gray-400">
+                    <h3 className="mb-3 text-2xl CalSans">{item.title}</h3>
+                    <p className="text-gray-400 GolosText">{item.desc}</p>
+                </div>
             </div>
         ))}
       </div>

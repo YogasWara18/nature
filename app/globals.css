@@ -241,7 +241,7 @@ body {
   background-position: center;
   background-size: contain;
   bottom: -13%;
-  right: 10%;
+  right: 3%;
   height: 450px;
   width: 455px;
 }
@@ -272,8 +272,29 @@ body {
     height: 100%;
     margin-top: 8%;
   }
+
   .hero-content-img {
     top: 70%;
+  }
+
+  .about{
+    background-position: top center;
+  }
+
+  .service:after{
+    font-size: 8rem;
+  }
+
+  .service:before{
+    height: 350px;
+    bottom: -10%;
+    width: 500px;
+  }
+
+  .service-img{
+    transform: scale(1);
+    opacity: 1;
+    transition: var(--transition-slow);
   }
 }
 
@@ -281,7 +302,14 @@ body {
   .hero {
     margin-top: 10%;
   }
+
   .hero-content-img {
     top: 50% !important;
   }
+
+  .service:before{
+    display: none;
+
+  }
+
 }

@@ -16,7 +16,85 @@ const paralexData = [
         location: "Indonesia, Bogor",
         year: "2025",
         bg: "/Paralex-1.jpg"
-    }
+    },
+    {
+        id: 2,
+        tag: "Organic Elegance",
+        number: "02",
+        title: (
+            <>
+                Nature <br /> Fused Lounge
+            </>
+        ),
+        location: "Mexico, Tulum",
+        year: "2024",
+        bg: "/Paralex-2.jpg"
+    },
+    {
+        id: 3,
+        tag: "Architectural Sanctuary",
+        number: "03",
+        title: (
+            <>
+                Cliffside <br /> Nature Residence
+            </>
+        ),
+        location: "Colombia, Medellín",
+        year: "2023",
+        bg: "/Paralex-3.jpg"
+    },
+    {
+        id: 4, 
+        tag: "Natural Immersion",
+        number: "04",
+        title: (
+            <>
+                Curved <br /> Nature Interior
+            </>
+        ),
+        location: "Japan, Kyoto",
+        year: "2022",
+        bg: "/Paralex-4.jpg"
+    },
+    {
+        id: 5,
+        tag: "Botanical Bliss",
+        number: "05",
+        title: (
+            <>
+                Rainforest <br /> Spa Escape
+            </>
+        ),
+        location: "Costa Rica, Uvita",
+        year: "2021",
+        bg: "/Paralex-5.jpg"
+    },
+    {
+        id: 6,
+        tag: "Glass Refuge",
+        number: "06",
+        title: (
+            <>
+                Alpine <br /> View Lounge
+            </>
+        ),
+        location: "Switzerland, Zermatt",
+        year: "2020",
+        bg: "/Paralex-6.jpg"
+    },
+    {
+        id: 7,
+        tag: "Natureflow Design",
+        number: "07",
+        title: (
+            <>
+                Curved <br /> Forest Dwelling
+            </>
+        ),
+        location: "New Zealand",
+        year: "2019",
+        bg: "/Paralex-7.jpg"
+    },
 ]
 
 export default function Paralex() {
@@ -51,7 +129,7 @@ function ParalexSection({ item }: { item : any }) {
                 zIndex: item.id * 1,
             }}
         >
-            <div className="Paralex-content flex flex-col justify-baseline px-[8%] py-20">
+            <div className="Paralex-content flex flex-col justify-between px-[8%] py-20">
                 <div className="flex justify-between items-center gap-5">
                     <span className="text-white GolosText border border-gray-300 px-4 p-2 rounded-full uppercase">
                         {item.tag}

@@ -215,6 +215,10 @@ body {
   z-index: -1;
 }
 
+.Paralex-content{
+  height: 85vh;
+}
+
 
 
 @media (max-width: 991px) {

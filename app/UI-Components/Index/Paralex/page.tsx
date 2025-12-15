@@ -6,14 +6,14 @@ import { useRef } from "react";
 const paralexData = [
     {
         id: 1,
-        tag: "Residentail",
+        tag: "Sanctuary of Serenity",
         number: "01",
         title: (
             <>
-                Industrial <br /> elegnce condo
+                Waterfall <br /> Serenity Suite
             </>
         ),
-        location: "Berlin, Germany",
+        location: "Indonesia, Bogor",
         year: "2025",
         bg: "/Paralex-1.jpg"
     }
@@ -53,7 +53,18 @@ function ParalexSection({ item }: { item : any }) {
         >
             <div className="Paralex-content flex flex-col justify-baseline px-[8%] py-20">
                 <div className="flex justify-between items-center gap-5">
-
+                    <span className="text-white GolosText border border-gray-300 px-4 p-2 rounded-full uppercase">
+                        {item.tag}
+                    </span>
+                    <h1 className="GolosText text-6xl font-bold text-(--prim)">
+                        {item.number}
+                    </h1>
+                </div>
+                <div className="text-gray-300">
+                    <h1 className="CalSans text-6xl md:text-8xl">{item.title}</h1>
+                    <p className="mt-3 text-2xl">
+                        {item.location} <br /> {item.year}
+                    </p>
                 </div>
             </div>
         </motion.div>

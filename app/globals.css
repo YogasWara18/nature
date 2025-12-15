@@ -220,6 +220,33 @@ body {
 }
 
 /* Service Section */
+.service:after{
+  content: "Nature";
+  position: absolute;
+  line-height: 9rem;
+  bottom: 0;
+  left: 10%;
+  font-size: 12rem;
+  font-weight: 800;
+  font-family: var(--Audiowide);
+  opacity: 0.1;
+  color: gray;
+}
+
+.service:before{
+  content: '';
+  position: absolute;
+  background-image: url(../public/Service-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  bottom: -13%;
+  right: 10%;
+  height: 450px;
+  width: 455px;
+}
+
+
 .service-img{
   transform: scale(0);
   opacity: 0;

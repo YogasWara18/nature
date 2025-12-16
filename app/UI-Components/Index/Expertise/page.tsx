@@ -12,6 +12,10 @@ import "swiper/css";
 
 import expertiseSlide1 from "@/public/Banner-slide-1.jpg";
 import expertiseSlide2 from "@/public/Banner-slide-2.jpg";
+import expertiseSlide3 from "@/public/Banner-slide-3.jpg";
+import expertiseSlide4 from "@/public/Banner-slide-4.jpg";
+import expertiseSlide5 from "@/public/Banner-slide-5.jpg";
+
 
 const ExpertiseData = [
   {
@@ -103,6 +107,27 @@ export default function Expertise() {
                 <Image
                   src={expertiseSlide2}
                   alt="expertiseSlide2"
+                  className="w-full h-full object-cover"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={expertiseSlide3}
+                  alt="expertiseSlide3"
+                  className="w-full h-full object-cover"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={expertiseSlide4}
+                  alt="expertiseSlide4"
+                  className="w-full h-full object-cover"
+                />
+              </SwiperSlide>
+              <SwiperSlide>
+                <Image
+                  src={expertiseSlide5}
+                  alt="expertiseSlide5"
                   className="w-full h-full object-cover"
                 />
               </SwiperSlide>

@@ -47,11 +47,11 @@ const ExpertiseData = [
 export default function Expertise() {
   return (
     <>
-      <div className="expertise bg-[#241c18] px-31 ">
+      <div className="expertise bg-[#241c18] px-31">
         <div className="px-[8%] lg:px-[3%] md:py-22 pt-10 pb-10 md:pb-[35%] relative">
           <div className="flex flex-col gap-10">
             <div className="w-full">
-              <span className="rounded-full text-white title-span border border-gray-400 px-6 GolosText uppercase font-bold">
+              <span className="rounded-full text-white hero-span border border-gray-400 px-6 GolosText uppercase font-bold">
                 Our Expertise
               </span>
             </div>

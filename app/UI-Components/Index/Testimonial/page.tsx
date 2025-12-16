@@ -7,7 +7,7 @@ export default function Testimonial() {
                 <div>
                     <div className="flex flex-col gap-10">
             <div className="w-full">
-              <span className="rounded-full title-span border border-gray-400 px-6 GolosText uppercase font-bold">
+              <span className="rounded-full hero-span border border-gray-400 px-6 GolosText uppercase font-bold">
                 Stories of Harmony
               </span>
             </div>

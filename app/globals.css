@@ -37,7 +37,7 @@ body {
 }
 
 /* Navbar */
-.menu-link a {
+.menu-link a{
   font-weight: 500;
   font-family: var(--GolosText);
 }
@@ -68,16 +68,16 @@ body {
   opacity: calc(40%);
 }
 
-.hero-span {
+.hero-span{
   position: relative;
 }
 
 .hero-span:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 5%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50% , -50%);
   width: 8px;
   height: 8px;
   border-radius: 100%;
@@ -183,7 +183,7 @@ body {
 }
 
 .title-span:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 25%;
   left: 4%;
@@ -339,7 +339,7 @@ body {
 
 /* Testimonial Section */
 .testimonial-image{
-  height: 60vh;
+  height: 70vh;
   background-image: url(../public/Testimonial-image.jpg);
   background-repeat: no-repeat;
   background-position: center center;

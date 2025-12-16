@@ -337,6 +337,26 @@ body {
   opacity:calc(40%);
 }
 
+/* Testimonial Section */
+.testimonial-image{
+  height: 60vh;
+  background-image: url(../public/Testimonial-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.restimonial-image:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0, 0.2);
+}
+
 
 
 @media (max-width: 991px) {
@@ -376,6 +396,10 @@ body {
   .expertise-slider{
     bottom: -20%;
     height: 550px;
+  }
+
+  .pricing-wrap{
+    height: 300px;
   }
 }
 

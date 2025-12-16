@@ -4,6 +4,7 @@ import Hero from "./Hero/page";
 import Paralex from "./Paralex/page";
 import PricingPlans from "./PricingPlans/page";
 import Services from "./Services/page";
+import Testimonial from "./Testimonial/page";
 
 export default function Index() {
   return (
@@ -14,6 +15,7 @@ export default function Index() {
       <Services/>
       <Expertise/>
       <PricingPlans/>
+      <Testimonial/>
     </>
   );
 }

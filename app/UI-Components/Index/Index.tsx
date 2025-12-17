@@ -5,6 +5,7 @@ import Paralex from "./Paralex/page";
 import PricingPlans from "./PricingPlans/page";
 import Services from "./Services/page";
 import Testimonial from "./Testimonial/page";
+import Faqs from "./Faq/page";
 
 export default function Index() {
   return (
@@ -16,6 +17,7 @@ export default function Index() {
       <Expertise/>
       <PricingPlans/>
       <Testimonial/>
+      <Faqs/>
     </>
   );
 }

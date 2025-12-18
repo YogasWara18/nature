@@ -7,6 +7,7 @@ import Services from "./Services/page";
 import Testimonial from "./Testimonial/page";
 import Faqs from "./Faq/page";
 import Banner from "./Banner/page";
+import Blog from "./Blogs/page";
 
 export default function Index() {
   return (
@@ -20,6 +21,7 @@ export default function Index() {
       <Testimonial/>
       <Faqs/>
       <Banner/>
+      <Blog/>
     </>
   );
 }

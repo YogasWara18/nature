@@ -6,6 +6,7 @@ import PricingPlans from "./PricingPlans/page";
 import Services from "./Services/page";
 import Testimonial from "./Testimonial/page";
 import Faqs from "./Faq/page";
+import Banner from "./Banner/page";
 
 export default function Index() {
   return (
@@ -18,6 +19,7 @@ export default function Index() {
       <PricingPlans/>
       <Testimonial/>
       <Faqs/>
+      <Banner/>
     </>
   );
 }

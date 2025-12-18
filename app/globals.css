@@ -357,7 +357,13 @@ body {
   background-color: rgba(0, 0, 0, 0, 0.2);
 }
 
-
+/* Banner Section */
+.banner{
+  background-image: url(../public/Banner-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 
 @media (max-width: 991px) {
   .hero {

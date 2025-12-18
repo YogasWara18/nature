@@ -365,6 +365,25 @@ body {
   background-size: cover;
 }
 
+/* Newsletter Section */
+.newsletter{
+  z-index: 1;
+}
+
+.newsletter:after{
+  content: '';
+  position: absolute;
+  background-image: url(../public/Newsletter-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 @media (max-width: 991px) {
   .hero {
     height: 100%;

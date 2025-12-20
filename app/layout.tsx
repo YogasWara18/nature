@@ -23,9 +23,14 @@ const calsans = Cal_Sans ({
 });
 
 export const metadata: Metadata = {
-  title: "Nature Home",
+  title: "NATURE",
   description: "Designing Harmony with Nature",
+   icons: {
+    icon: "/navbar-logo.png", // atau "/favicon.ico"
+  },
 };
+
+
 
 export default function RootLayout({
   children,
@@ -35,8 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${audiowide.variable} ${golostext.variable} ${calsans.variable}`}
-      >
+        className={`${audiowide.variable} ${golostext.variable} ${calsans.variable}`}>
         <Navbar/>
         {children}
         <Footer/>

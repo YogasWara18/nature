@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="px-[8%] lg:px-[12%] py-10 footer bg-[#241c18] text-gray-300">
+    <footer className="px-[8%] lg:px-[12%] py-10 footer bg-[--white] text-gray-800">
       <div className="flex flex-col items-center space-y-6">
         {/* Logo */}
         <Link href="/" className="mb-3">
@@ -33,11 +33,11 @@ export default function Footer() {
           </Link>
         </div>
 
-        <div className="border-b border-gray-300 w-[350px] flex items-center transition-all duration-300 hover:border-(--prim) cursor-pointer"></div>
+        <div className="border-b border-gray-800 w-[350px] flex items-center transition-all duration-300 hover:border-(--prim) cursor-pointer"></div>
 
         {/* Copyright */}
         <p className="text-sm mt-1 text-center">
-          © {new Date().getFullYear()}. All Rights Reserved By <Link href="https://www.linkedin.com/in/t-kurnia-yogas-wara-604b64338/" className="transition-all duration-300 text-white font-semibold text-md hover:text-(--prim)">T. Kurnia Yogas Wara</Link>
+          © {new Date().getFullYear()}. All Rights Reserved By <Link href="https://www.linkedin.com/in/t-kurnia-yogas-wara-604b64338/" className="transition-all duration-300 text-gray-800 font-semibold text-md hover:text-(--prim)">T. Kurnia Yogas Wara</Link>
         </p>
       </div>
     </footer>

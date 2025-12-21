@@ -1,6 +1,74 @@
 [
     {
         "id" : 1,
-        "image": 
+        "image": "/Project-page-1.jpg",
+        "tags": ["Nature Design", "Bamboo"],
+        "title": "Whispering Bamboo Pavilion",
+        "location": "Bali",
+        "date": "10 july 2020"
+    },
+    {
+        "id": 2,
+        "image": "/Project-page-2.jpg",
+        "tags": ["Eco", "Wood"],
+        "title": "Nordic Light Retreat",
+        "location": "Sweden",
+        "date": "22 November 20220"
+    },
+    {
+        "id": 3,
+        "image": "/Project-page-3.jpg",
+        "tags": ["Organic"],
+        "title": "Desert Bloom Residence",
+        "location": "Morocco",
+        "date": "14 April 2021"
+    },
+    {
+        "id": 4,
+        "image": "/Project-page-4.jpg",
+        "tags": ["Rain Forest", "Green Living"],
+        "title": "Amazon Harmony Lodge",
+        "location": "Brazil",
+        "date": "03 September 2021"
+    },
+    {
+        "id": 5,
+        "image": "/Project-page-5.jpg",
+        "tags": ["Atrium Design", "Plantscape"],
+        "title": "Sunlit Fern Atrium Design",
+        "location": "Australia",
+        "date": "19 February 2022"
+    },
+    {
+        "id": 6,
+        "image": "/Project-page-6.jpg",
+        "tags": ["Artspace"],
+        "title": "River Echoes Gallery",
+        "location": "Canada",
+        "date": "07 August 2023"
+    },
+    {
+        "id": 7,
+        "image": "/Project-page-7.jpg",
+        "tags": ["Yoga", "Sunlight"],
+        "title": "Golden Horizon Yoga Studio",
+        "location": "Tanzania",
+        "date": "25 May 2023"
+    },
+    {
+        "id": 8,
+        "image": "/Project-page-8.jpg",
+        "tags": ["Library Design", "Wood"],
+        "title": "Rainforest Resonance Library",
+        "location": "Peru",
+        "date": "11 Oct 2024"
+    },
+    {
+        "id": 9,
+        "image": "/Project-page-9.jpg",
+        "tags": ["Mountain Design"],
+        "title": "Mountain Breath Chalet",
+        "location": "Swiss",
+        "date": "16 Maret 2025"
     }
 ]

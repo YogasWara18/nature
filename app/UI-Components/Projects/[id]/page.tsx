@@ -4,6 +4,7 @@ import Link from 'next/link'
 import ProjectsData from "@/app/JsonData/Projects.json";
 import { useParams } from 'next/navigation';
 import { div } from 'framer-motion/client';
+import Image from 'next/image';
 
 export default function ProjectDetails() {
 
@@ -48,7 +49,47 @@ export default function ProjectDetails() {
       {/* Project Details  */}
       <div className="px-[8%] lg:px-[12%] py-20">
         <h2 className="CalSans text-5xl md:text-7xl">{project.title}</h2>
-        <div className=""></div>
+        <div className="mt-10 border-b border-gray-300 pb-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+          <div className="flex flex-col items-start">
+            <h2 className="CalSans text-gray-400 tracking-wider">Architect:</h2>
+            <h3 className="GolosText text-xl">Lumi Arktikos</h3>
+          </div>
+           <div className="flex flex-col items-start">
+            <h2 className="CalSans text-gray-400 tracking-wider">Project Type:</h2>
+            <h3 className="GolosText text-xl flex flex-wrap">
+              {project.tags.map((tag, idx) => (
+                <div key={idx} className='flex'>
+                  {tag}
+                </div>
+              ))}
+            </h3>
+          </div>
+            <div className="flex flex-col items-start">
+            <h2 className="CalSans text-gray-400 tracking-wider">Client:</h2>
+            <h3 className="GolosText text-xl">Nordic Escape</h3>
+          </div>
+          <div className="flex flex-col items-start">
+            <h2 className="CalSans text-gray-400 tracking-wider">Terms:</h2>
+            <h3 className="GolosText text-xl">4 Month</h3>
+          </div>
+          <div className="flex flex-col items-start">
+            <h2 className="CalSans text-gray-400 tracking-wider">Strategy:</h2>
+            <h3 className="GolosText text-xl">Minimalistic</h3>
+          </div>
+          <div className="flex flex-col items-start">
+            <h2 className="CalSans text-gray-400 tracking-wider">Date:</h2>
+            <h3 className="GolosText text-xl">{project.date}</h3>
+          </div>
+        </div>
+        <div className="project-det-img mt-10 w-full h-[500px] md:h-[700px] rounded-2xl overflow-hidden">
+          <Image
+            src={project.image}
+            alt={project.title}
+            width={800}
+            height={400}
+            className='w-full h-full object-cover'
+          />
+        </div>
       </div>
     </>
   )

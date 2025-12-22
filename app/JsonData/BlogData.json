@@ -13,7 +13,7 @@
      {
         "id": "2",
         "image": "/Blog-home-2-v3.jpg",
-        "imageDet": "/Blog-home-2.jpg",
+        "imageDet": "/Blog-home-2-v3.jpg",
         "tag": "Organic Luxury Home",
         "postby": "Admin",
         "date": "18 June 2024",
@@ -24,7 +24,7 @@
      {
         "id": "3",
         "image": "/Blog-room-3-v4.jpg",
-        "imageDet": "/Blog-room-3.jpg",
+        "imageDet": "/Blog-room-3-v4.jpg",
         "tag": "Nature Inspired Villa",
         "postby": "Admin",
         "date": "28 Oktober 2025",
@@ -57,7 +57,7 @@
      {
         "id": "6",
         "image": "/Blog-badroom-6-v5.jpg",
-        "imageDet": "/Blog-badroom-6.jpg",
+        "imageDet": "/Blog-badroom-6-v5.jpg",
         "tag": "Forest View Bedroom",
         "postby": "Admin",
         "date": "12 Mei 2021",
@@ -111,8 +111,8 @@
     },
      {
         "id": "11",
-        "image": "/Blog-bathroom-11.jpg",
-        "imageDet": "/Blog-bathroom-11.jpg",
+        "image": "/Blog-bathroom-11-v2.jpg",
+        "imageDet": "/Blog-bathroom-11-v2.jpg",
         "tag": "Nature Inspired Bathroom",
         "postby": "Admin",
         "date": "16 October 2022",
@@ -144,8 +144,8 @@
     },
      {
         "id": "14",
-        "image": "/Blog-home-14.jpg",
-        "imageDet": "/Blog-home-14.jpg",
+        "image": "/Blog-home-14-v4.jpg",
+        "imageDet": "/Blog-home-14-v4.jpg",
         "tag": "Nature Inspired Living",
         "postby": "Admin",
         "date": "24 July 2023",

@@ -11,7 +11,7 @@ const DetailsInfo = [
     {
         id: 1,
         title: "Open Living Spaces",
-        pere: "Designing fluid, open-plan interiors that seamlessly merge with surrounding landscapes, encouraging natural airflow and a strong indoor–outdoor connection."
+        pere: "Designing fluid, open plan interiors that seamlessly merge with surrounding landscapes, encouraging natural airflow and a strong indoor outdoor connection."
     },
     {
         id: 2,
@@ -26,14 +26,20 @@ const DetailsInfo = [
     {
         id: 4,
         title: "Eco Amenities",
-        pere: "Integrating energy-efficient appliances, solar panels, rainwater harvesting systems, and wellness-focused bathroom fixtures to balance modern comfort with ecological responsibility."
+        pere: "Integrating energy efficient appliances, solar panels, rainwater harvesting systems, and wellness focused bathroom fixtures to balance modern comfort with ecological responsibility."
     },
     {
         id: 5,
         title: "Panoramic Windows",
-        pere: "Installing floor-to-ceiling glass walls that frame forest, mountain, or ocean views, maximizing daylight and immersing residents in the rhythms of the natural world."
+        pere: "Installing floor to ceiling glass walls that frame forest, mountain, or ocean views, maximizing daylight and immersing residents in the rhythms of the natural world."
     },
 ];
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+
+import Gallery1 from "@/public/"
 
 export default function ProjectDetails() {
 
@@ -187,6 +193,15 @@ export default function ProjectDetails() {
                 <h2 className="GolosText text-xl mt-2">Kitchen Area</h2>
             </div>
         </div>
+        <div className="mt-10">
+            <h2 className="CalSans text-5xl md:text-7xl">Incredible Result</h2>
+            <p className="text-gray-500 GolosText mt-5">By cultivating multi sensory experiences, we can create interiors that harmonize with the rhythms of the natural world. These spaces immerse us in organic textures, daylight, greenery, and flowing air, proven to inspire, restore balance, and enhance well being. Beyond these benefits, nature centered design reduces stress, nurtures creativity, and accelerates healing. In increasingly urbanized environments, nature design offers a more humanistic and sustainable approach, reconnecting people with earth’s elements. The result is interiors that celebrate how we live, work, and grow alongside nature. Rooted in biophilia literally “the love of living things” this philosophy embraces our innate bond with the environment, transforming design into a pathway of renewal and connection.</p>
+        </div>
+      </div>
+
+      {/* Project Gallery */}
+      <div className="project-gallery">
+        <Swiper></Swiper>
       </div>
     </>
   )

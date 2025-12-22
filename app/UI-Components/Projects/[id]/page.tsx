@@ -5,6 +5,7 @@ import ProjectsData from "@/app/JsonData/Projects.json";
 import { useParams } from 'next/navigation';
 import { div } from 'framer-motion/client';
 import Image from 'next/image';
+import CountUp from 'react-countup';
 
 const DetailsInfo = [
     {
@@ -131,6 +132,60 @@ export default function ProjectDetails() {
                     </div>
                 ))}
               </div>
+        </div>
+        <div className="mt-10 border border-gray-200 rounded-md grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+            <div className="p-10 border border-gray-200 flex flex-col justify-center items-center">
+                <h2 className="text-5xl tracking-wider GolosText font-bold">
+                    (
+                        <CountUp
+                        start={0}
+                        end={30}
+                        duration={8}
+                        enableScrollSpy
+                        />
+                   M²)
+                </h2>
+                <h2 className="GolosText text-xl mt-2">Bedroom</h2>
+            </div>
+             <div className="p-10 border border-gray-200 flex flex-col justify-center items-center">
+                <h2 className="text-5xl tracking-wider GolosText font-bold">
+                    (
+                        <CountUp
+                        start={0}
+                        end={22}
+                        duration={8}
+                        enableScrollSpy
+                        />
+                   M²)
+                </h2>
+                <h2 className="GolosText text-xl mt-2">Bathroom</h2>
+            </div>
+             <div className="p-10 border border-gray-200 flex flex-col justify-center items-center">
+                <h2 className="text-5xl tracking-wider GolosText font-bold">
+                    (
+                        <CountUp
+                        start={0}
+                        end={29}
+                        duration={8}
+                        enableScrollSpy
+                        />
+                   M²)
+                </h2>
+                <h2 className="GolosText text-xl mt-2">Workspace</h2>
+            </div>
+             <div className="p-10 border border-gray-200 flex flex-col justify-center items-center">
+                <h2 className="text-5xl tracking-wider GolosText font-bold">
+                    (
+                        <CountUp
+                        start={0}
+                        end={12}
+                        duration={8}
+                        enableScrollSpy
+                        />
+                   M²)
+                </h2>
+                <h2 className="GolosText text-xl mt-2">Kitchen Area</h2>
+            </div>
         </div>
       </div>
     </>

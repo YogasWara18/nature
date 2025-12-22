@@ -34,7 +34,7 @@
     {
         "id": 5,
         "image": "/Project-page-5-v2.jpg",
-        "tags": ["Atrium Design", "Plantscape"],
+        "tags": ["Atrium", "Plantscape"],
         "title": "Sunlit Fern Atrium Design",
         "location": "Australia",
         "date": "19-02-2022"
@@ -66,7 +66,7 @@
     {
         "id": 9,
         "image": "/Project-page-9-v2.jpg",
-        "tags": ["Mountain Design"],
+        "tags": ["Mountain"],
         "title": "Mountain Breath Chalet",
         "location": "Swiss",
         "date": "16-03-2025"

@@ -39,7 +39,14 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import Gallery1 from "@/public/"
+import Gallery1 from "@/public/Project-gallery-1.jpg";
+import Gallery2 from "@/public/Project-gallery-2.jpg";
+import Gallery3 from "@/public/Project-gallery-3.jpg";
+import Gallery4 from "@/public/Project-gallery-4.jpg";
+import Gallery5 from "@/public/Project-gallery-5.jpg";
+import Gallery6 from "@/public/Project-gallery-6.jpg";
+
+const Gallerys = [Gallery1, Gallery2, Gallery3, Gallery4, Gallery5, Gallery6];
 
 export default function ProjectDetails() {
 
@@ -201,7 +208,31 @@ export default function ProjectDetails() {
 
       {/* Project Gallery */}
       <div className="project-gallery">
-        <Swiper></Swiper>
+        <Swiper
+        slidesPerView={2}
+        spaceBetween={0}
+        loop={true}
+        autoplay={{
+          delay: 1500,
+        }}
+        modules={[Autoplay]}
+        speed={1800}
+        breakpoints={{
+            1200: {slidesPerView: 2},
+            575: {slidesPerView: 1},
+            0: {slidesPerView: 1},
+        }}
+        >
+          {Gallerys.map((img, idx) => (
+            <SwiperSlide key={idx}>
+              <Image
+                src={img}
+                alt={`Galleryss-Img-${idx}`}
+                className='w-full h-[600px] object-contain'
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </>
   )

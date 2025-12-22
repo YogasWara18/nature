@@ -234,6 +234,49 @@ export default function ProjectDetails() {
           ))}
         </Swiper>
       </div>
+
+      {/* Related Projects */}
+      <div className="px-[8%] lg:px-[12%] py-20 about">
+        <div className="flex flex-col lg:flex-row gap-10">
+          <div className="w-full lg:w-1/3 title pt-8">
+            <span className="rounded-full hero-span border border-gray-400 px-6 py-2 GolosText uppercase font-bold">Related Projects</span>
+          </div>
+          <div className="w-full lg:w-2/3">
+            <h1 className="CalSans text-4xl md:text-7xl w-full lg:w-[60%]">Explore <span className="text-(--prim)">Our Project</span> Showcase</h1>
+          </div>
+        </div>
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={30}
+          loop={true}
+          autoplay={{
+            delay: 1500,
+          }}
+          modules={[Autoplay]}
+          speed={1800}
+          breakpoints={{
+            1200: { slidesPerView: 3 },
+            991: { slidesPerView: 2 },
+            575: { slidesPerView: 1 },
+            0: { slidesPerView: 1 },
+          }}
+          className='mt-30'
+        >
+          {
+            ProjectsData.map((project, index) => (
+              <SwiperSlide key={index}>
+                <div className="project-card group">
+                  <Link href={`/UI-Components/Projects/${project.id}`}>
+                    <div className="project-image relative w-full h-[500px] overflow-hidden rounded-2xl cursor-pointer">
+                      
+                    </div>
+                  </Link>
+                </div>
+              </SwiperSlide>
+            ))
+          }
+        </Swiper>
+      </div>
     </>
   )
 }

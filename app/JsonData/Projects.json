@@ -1,15 +1,15 @@
 [
     {
         "id" : 1,
-        "image": "/Project-page-1.jpg",
-        "tags": ["Nature Design", "Bamboo"],
+        "image": "/Project-page-1-v2.jpg",
+        "tags": ["Nature", "Bamboo"],
         "title": "Whispering Bamboo Pavilion",
         "location": "Bali",
         "date": "10-08-2020"
     },
     {
         "id": 2,
-        "image": "/Project-page-2.jpg",
+        "image": "/Project-page-2-v2.jpg",
         "tags": ["Eco", "Wood"],
         "title": "Nordic Light Retreat",
         "location": "Sweden",
@@ -17,7 +17,7 @@
     },
     {
         "id": 3,
-        "image": "/Project-page-3.jpg",
+        "image": "/Project-page-3-v2.jpg",
         "tags": ["Organic"],
         "title": "Desert Bloom Residence",
         "location": "Morocco",
@@ -25,15 +25,15 @@
     },
     {
         "id": 4,
-        "image": "/Project-page-4.jpg",
-        "tags": ["Rain Forest", "Green Living"],
+        "image": "/Project-page-4-v2.jpg",
+        "tags": ["Rain", "Green"],
         "title": "Amazon Harmony Lodge",
         "location": "Brazil",
         "date": "03-10-2021"
     },
     {
         "id": 5,
-        "image": "/Project-page-5.jpg",
+        "image": "/Project-page-5-v2.jpg",
         "tags": ["Atrium Design", "Plantscape"],
         "title": "Sunlit Fern Atrium Design",
         "location": "Australia",
@@ -41,7 +41,7 @@
     },
     {
         "id": 6,
-        "image": "/Project-page-6.jpg",
+        "image": "/Project-page-6-v2.jpg",
         "tags": ["Artspace"],
         "title": "River Echoes Gallery",
         "location": "Canada",
@@ -49,7 +49,7 @@
     },
     {
         "id": 7,
-        "image": "/Project-page-7.jpg",
+        "image": "/Project-page-7-v2.jpg",
         "tags": ["Yoga", "Sunlight"],
         "title": "Golden Horizon Yoga Studio",
         "location": "Tanzania",
@@ -57,15 +57,15 @@
     },
     {
         "id": 8,
-        "image": "/Project-page-8.jpg",
-        "tags": ["Library Design", "Wood"],
+        "image": "/Project-page-8-v2.jpg",
+        "tags": ["Library", "Wood"],
         "title": "Rainforest Resonance Library",
         "location": "Peru",
         "date": "11-11-2024"
     },
     {
         "id": 9,
-        "image": "/Project-page-9.jpg",
+        "image": "/Project-page-9-v2.jpg",
         "tags": ["Mountain Design"],
         "title": "Mountain Breath Chalet",
         "location": "Swiss",

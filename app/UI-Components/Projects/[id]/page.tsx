@@ -6,6 +6,34 @@ import { useParams } from 'next/navigation';
 import { div } from 'framer-motion/client';
 import Image from 'next/image';
 
+const DetailsInfo = [
+    {
+        id: 1,
+        title: "Open Living Spaces",
+        pere: "Designing fluid, open-plan interiors that seamlessly merge with surrounding landscapes, encouraging natural airflow and a strong indoor–outdoor connection."
+    },
+    {
+        id: 2,
+        title: "Outdoor Living",
+        pere: "Creating expansive outdoor sanctuaries with wooden decks, water features, and native gardens that invite relaxation, meditation, and social gatherings in nature."
+    },
+    {
+        id: 3,
+        title: "Natural Materials",
+        pere: "Utilizing reclaimed timber, river stone, bamboo, and organic textiles to foster warmth, sustainability, and a tactile bond with the earth."
+    },
+    {
+        id: 4,
+        title: "Eco Amenities",
+        pere: "Integrating energy-efficient appliances, solar panels, rainwater harvesting systems, and wellness-focused bathroom fixtures to balance modern comfort with ecological responsibility."
+    },
+    {
+        id: 5,
+        title: "Panoramic Windows",
+        pere: "Installing floor-to-ceiling glass walls that frame forest, mountain, or ocean views, maximizing daylight and immersing residents in the rhythms of the natural world."
+    },
+];
+
 export default function ProjectDetails() {
 
   const { id } = useParams();
@@ -87,8 +115,22 @@ export default function ProjectDetails() {
             alt={project.title}
             width={800}
             height={400}
+            priority
             className='w-full h-full object-cover'
           />
+        </div>
+        {/* Project info */}
+        <div className="mt-10">
+            <h2 className="CalSans text-5xl md:text-7xl">Design in Details</h2>
+            <p className="text-gray-500 GolosText mt-5">The wooden cabin design highlights a seamless blend of organic architecture and magical atmosphere, with its curved roof harmonizing with the snowy landscape, warm timber walls radiating golden light from within, and expansive windows framing direct views of the aurora borealis in vivid green and turquoise; the surrounding snow covered trees and a pathway illuminated by blue lights provide natural framing and futuristic contrast, while the overall composition conveys serenity, intimacy, and exclusivity an ideal branding concept for Nordic Escape, where the warmth of the cabin meets the wonder of nature as a symbol of retreat, healing, and living in harmony with the environment.</p>
+              <div className="mt-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-2 md:gap-5">
+                {DetailsInfo.map((info, index) => (
+                    <div key={index} className="flex gap-2">
+                        <i className="bi bi-check-circle-fill text-(--prim)"></i>
+                        <p className="GolosText text-gray-500"><span className='font-bold text-black'>{info.title}: </span>{info.pere}</p>
+                    </div>
+                ))}
+              </div>
         </div>
       </div>
     </>

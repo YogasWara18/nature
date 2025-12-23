@@ -37,10 +37,59 @@ const historyData = [
     year: "2021",
     text: "Biophilic showcase merging plants, modern design, and sustainable innovation."
   },
+  {
+    image: About2,
+    year: "2000",
+    text: "The company is founfed by a visionary designer with a focus on personalized."
+  }
   
 ];
 
+import Award1 from "@/public/Awards-1.jpg";
+import Award2 from "@/public/Awards-2.jpg";
+import Award3 from "@/public/Awards-3.jpg";
+import Award4 from "@/public/Awards-4.jpg";
+import Award5 from "@/public/Awards-5.jpg";
+import { useState } from "react";
+import { div } from "framer-motion/client";
+
+const awardsData = [
+  {
+    year: "2000",
+    title: "Eco Inspired Interior Design",
+    category: "Spaces Rooted in Nature’s Harmony",
+    image: Award1
+  },
+  {
+    year: "2021",
+    title: "Sustainable Architectural Branding",
+    category: "Building Identity Through Green Innovation",
+    image: Award2
+  },
+  {
+    year: "2022",
+    title: "- Biophilic Digital Experience",
+    category: "Designing Interfaces That Breathe Nature",
+    image: Award3
+  },
+  {
+    year: "2023",
+    title: "Nature Driven Product Innovation",
+    category: "Crafting Tomorrow with Earth’s Wisdom",
+    image: Award4
+  },
+  {
+    year: "2025",
+    title: "Green Visual Storytelling",
+    category: "Narratives that Blossom with Sustainability",
+    image: Award5
+  },
+];
+
 export default function About() {
+
+  const [hoveredIndex, setHoveredIndex] = useState(0);
+
   return (
     <>
       <div className="section-bg text-white flex flex-col">
@@ -121,7 +170,83 @@ export default function About() {
       </div>
 
       <div className="history-swiper py-15 pb-0">
+          <Swiper
+            slidesPerView={4}
+            spaceBetween={30}
+            loop={true}
+            autoplay={{
+              delay:1500,
+              disableOnInteraction: false,
+            }}
+            speed={200}
+            modules={[Autoplay]}
+            breakpoints={{
+              1199: {slidesPerView: 4},
+              991: {slidesPerView: 2},
+              575: {slidesPerView: 1},
+              0: {slidesPerView: 1},
+            }}
+          >
+            {historyData.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="history-card">
+                  <Image
+                    src={item.image}
+                    alt={`history-${item.year}`}
+                    className="rounded-2xl w-40 h-40 object-cover"
+                  />
+                  <div className="history-content py-15">
+                    <h2 className="text-3xl CalSans font-bold mb-5">{item.year}</h2>
+                    <p className="GolosText text-sm text-gray-500">{item.text}</p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+      </div>
 
+      <div className="px-[8%] lg:px-[12%] py-20 pb-0">
+        <div className="flex flex-col lg:flex-row gap-10">
+            <div className="w-full lg:w-1/3 title pt-8">
+                <span className="rounded-full hero-span border border-gray-400 px-7 GolosText uppercase font-bold">Award & Achievement</span>
+            </div>
+            <div className="w-full lg:w-2/3">
+                <h1 className="CalSans text-4xl md:text-6xl mb-5">Design <span className="text-(--prim)"> That Speaks Our</span> Industry Awards</h1>
+            </div>
+        </div>
+
+          <div className="flex flex-col lg:flex-row gap-10 py-15 relative"
+            onMouseMove={(e) => {
+              if(hoveredIndex === null ) setHoveredIndex(0);
+            }}
+            onMouseLeave={() => setHoveredIndex(0)}
+            >
+              <div className="w-full lg:w-1/3 relative overflow-hidden rounded-2xl">
+                <div className="relative h-[420px] w-full">
+                  {awardsData.map((item, index) => (
+                    <Image
+                      key={index}
+                      src={item.image}
+                      alt={item.title}
+                      width={500}
+                      height={500}
+                      className={`absolute inset-0 w-full h-full object-cover rounded-2xl transition-opacity duration-700 ease-in-out ${hoveredIndex === index ? "opacity-100" : "opacity-0"}`}
+                    />
+                  ))}
+                </div>
+              </div>
+              <div className="w-full lg:w-2/3">
+                  {awardsData.map((item, index) => (
+                    <div
+                        key={index}
+                        onMouseMove={() => setHoveredIndex(index)}
+                        className="border-b border-gray-300 py-6 flex justify-between items-center cursor-pointer">
+                          <span className="GolosText text-gray-500 text-2xl">{item.year}</span>
+
+                        </div>
+                  ))}
+              </div>
+          </div>
       </div>
     </>
   );

@@ -19,16 +19,16 @@ export default function Footer() {
 
         {/* Social Media */}
         <div className="flex space-x-6 text-2xl">
-          <Link href="https://github.com/username" target="_blank" className="hover:text-(--prim) transition">
+          <Link href="https://github.com/YogasWara18" target="_blank" className="hover:text-(--prim) transition">
             <FaGithub />
           </Link>
-          <Link href="https://linkedin.com/in/username" target="_blank" className="hover:text-(--prim) transition">
+          <Link href="https://www.linkedin.com/in/t-kurnia-yogas-wara-604b64338/" target="_blank" className="hover:text-(--prim) transition">
             <FaLinkedin />
           </Link>
-          <Link href="mailto:contact@designnaturehome.com" className="hover:text-(--prim) transition">
+          <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=teukukurniayogaswara@gmail.com" className="hover:text-(--prim) transition">
             <FaEnvelope />
           </Link>
-          <Link href="https://wa.me/628123456789" target="_blank" className="hover:text-(--prim) transition">
+          <Link href="https://wa.me/+6281234701212" target="_blank" className="hover:text-(--prim) transition">
             <FaWhatsapp />
           </Link>
         </div>

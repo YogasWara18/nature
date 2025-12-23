@@ -9,6 +9,7 @@ import Image from "next/image";
 import blogDet1 from "@/public/Blog-details-1.jpg";
 import blogDet2 from "@/public/Blog-details-2.jpg";
 import quote from "@/public/navbar-logo.png";
+import Newsletter from "../../Index/Newsletter/page";
 
 
 export default function BlogDetails() {
@@ -48,7 +49,7 @@ export default function BlogDetails() {
           </Link>
           <i className="ri-arrow-right-wide-fill mt-1"></i>
           <Link
-            href="/UI-Components/Projects"
+            href="/UI-Components/Blogs"
             className="hover:text-(--prim) transition-all duration-300"
           >
             Blog
@@ -124,11 +125,40 @@ export default function BlogDetails() {
                     <h2 className="text-4xl md:text-4xl CalSans my-5">Categories</h2>
                     <div className="flex flex-col gap-2">
                         <h2 className="GolosText text-lg hover:text-(--prim) cursor-pointer transition-all duration-300 font-semibold border-b border-gray-300 pb-1">Accessories</h2>
+                        <h2 className="GolosText text-lg hover:text-(--prim) cursor-pointer transition-all duration-300 font-semibold border-b border-gray-300 pb-1">Electrical & Lighting</h2>
+                        <h2 className="GolosText text-lg hover:text-(--prim) cursor-pointer transition-all duration-300 font-semibold border-b border-gray-300 pb-1">Home Appliance</h2>
+                        <h2 className="GolosText text-lg hover:text-(--prim) cursor-pointer transition-all duration-300 font-semibold border-b border-gray-300 pb-1">Power Tools</h2>
+                        <h2 className="GolosText text-lg hover:text-(--prim) cursor-pointer transition-all duration-300 font-semibold border-b border-gray-300 pb-1">Uncategorized</h2>
+                        <h2 className="GolosText text-lg hover:text-(--prim) cursor-pointer transition-all duration-300 font-semibold border-b border-gray-300 pb-1">Ware Accessories</h2>
+                    </div>
+                </div>
+                <div>
+                    <h2 className="text-4xl md:text-4xl CalSans mt-10 mb-5">Recent Posts</h2>
+                    <div className="flex flex-col gap-2">
+                        {BlogData.slice(0, 4).map((blog, index) => (
+                            <Link href={`/UI-Components/Blogs/${blog.id}`}>
+                                <div className="flex flex-row gap-3">
+                                    <Image
+                                        src={blog.image}
+                                        alt={blog.title}
+                                        width={150}
+                                        height={150}
+                                        className="rounded-2xl"
+                                    />
+                                    <div className="flex flex-col">
+                                        <p className="GolosText">{blog.date}</p>
+                                        <h2 className="GolosText text-xl md:text-3xl lg:text-xl hover:text-(--prim) cursor-pointer font-semibold transition-all duration-300">{blog.title}</h2>
+                                    </div>
+                                </div>
+                            </Link>
+                        )) }
                     </div>
                 </div>
             </div>
         </div>
       </div>
+
+      <Newsletter/>
     </>
   )
 }

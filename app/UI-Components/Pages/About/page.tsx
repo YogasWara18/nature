@@ -68,7 +68,7 @@ const awardsData = [
   },
   {
     year: "2022",
-    title: "- Biophilic Digital Experience",
+    title: "Biophilic Digital Experience",
     category: "Designing Interfaces That Breathe Nature",
     image: Award3
   },
@@ -242,7 +242,7 @@ export default function About() {
                         onMouseMove={() => setHoveredIndex(index)}
                         className="border-b border-gray-300 py-6 flex justify-between items-center cursor-pointer">
                           <span className="GolosText text-gray-500 text-2xl">{item.year}</span>
-
+                            <h2 className="text-3xl CalSans transition-all duration-300 hover:text-(--prim)">{item.title}</h2>
                         </div>
                   ))}
               </div>

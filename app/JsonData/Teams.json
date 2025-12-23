@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "image": "/Team-page-1-v2.jpg",
+    "name": "Olivia Davis",
+    "role": "Co-Founder & CEO",
+    "exp": "15 years",
+    "number": "+(44) 234 567 789",
+    "desc": "Visionary leader with a proven track record in scaling businesses and inspiring innovation."
+  },
+  {
+    "id": 2,
+    "image": "/Team-page-2-v2.jpg",
+    "name": "Daniel Carter",
+    "role": "Chief Operating Officer",
+    "exp": "12 years",
+    "number": "+(44) 987 654 321",
+    "desc": "Expert in operational excellence, ensuring seamless processes and sustainable growth across all departments."
+  },
+  {
+    "id": 3,
+    "image": "/Team-page-3-v2.jpg",
+    "name": "Sophia Lee",
+    "role": "Chief Technology Officer",
+    "exp": "10 years",
+    "number": "+(44) 111 222 333",
+    "desc": "Innovator in modern web technologies, driving product development and digital transformation strategies."
+  },
+  {
+    "id": 4,
+    "image": "/Team-page-4-v2.jpg",
+    "name": "Emily Johnson",
+    "role": "Head of Marketing",
+    "exp": "8 years",
+    "number": "+(44) 444 555 666",
+    "desc": "Creative strategist specializing in brand storytelling and customer engagement through impactful campaigns."
+  },
+  {
+    "id": 5,
+    "image": "/Team-page-5-v2.jpg",
+    "name": "Michael Brown",
+    "role": "Lead Designer",
+    "exp": "7 years",
+    "number": "+(44) 777 888 999",
+    "desc": "Passionate about crafting user-centered designs that blend aesthetics with functionality."
+  },
+  {
+    "id": 6,
+    "image": "/Team-page-6-v2.jpg",
+    "name": "Mark Jackson",
+    "role": "Project Manager",
+    "exp": "9 years",
+    "number": "+(44) 123 456 000",
+    "desc": "Detail-oriented manager ensuring projects are delivered on time, within scope, and exceeding expectations."
+  }
+]

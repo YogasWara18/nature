@@ -3,7 +3,42 @@
 import Link from "next/link";
 import Image from "next/image";
 import About2 from "@/public/About-page-1.jpg";
-import About4 from "@/public/About-page-2.jpg"
+import About4 from "@/public/About-page-2.jpg";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+
+import timeline1 from "@/public/Timeline-about-1.jpg";
+import timeline2 from "@/public/Timeline-about-2.jpg";
+import timeline3 from "@/public/Timeline-about-3.jpg";
+import timeline4 from "@/public/Timeline-about-4.jpg";
+
+const historyData = [
+
+  {
+    image: timeline1,
+    year: "2023",
+    text: "Immersive forest exhibition blending nature, light, and inspiring design."
+
+  },
+  {
+    image: timeline2,
+    year: "2024",
+    text: "Conference stage alive with greenery, sustainability, and inspiring dialogue."
+  },
+  {
+    image: timeline3,
+    year: "2025",
+    text: "Eco friendly booth showcasing wood, vertical gardens, and creative branding."
+  },
+  {
+    image: timeline4,
+    year: "2021",
+    text: "Biophilic showcase merging plants, modern design, and sustainable innovation."
+  },
+  
+];
 
 export default function About() {
   return (
@@ -78,9 +113,15 @@ export default function About() {
                 <span className="rounded-full hero-span border border-gray-400 px-6 GolosText uppercase font-bold">Our History</span>
             </div>
             <div className="w-full lg:w-2/3">
-                <h1 className="CalSans text-4xl md:text-6xl">Our Story Grows Like Forests<span className="text-(--prim)"> Shaped by Beautiful</span> Stages and Enduring Events.</h1>
+                <h1 className="CalSans text-4xl md:text-6xl mb-5">Our Story Grows Like Forests<span className="text-(--prim)"> Shaped by Beautiful</span> Stages and Enduring Events.</h1>
             </div>
         </div>
+
+
+      </div>
+
+      <div className="history-swiper py-15 pb-0">
+
       </div>
     </>
   );

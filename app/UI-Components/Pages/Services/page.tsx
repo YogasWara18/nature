@@ -7,8 +7,8 @@ import serviceImg2 from "../public/Service-page-2.jpg";
 import serviceImg3 from "../public/Service-page-3.jpg";
 import serviceImg4 from "../public/Service-page-4.jpg";
 import serviceImg5 from "../public/Service-page-5.jpg";
-import serviceImg6 from "../public/Service-page-6.png";
-import { image } from "framer-motion/client";
+import serviceImg6 from "../public/Service-page-6.jpg";
+
 import Newsletter from "../../Index/Newsletter/page";
 
 const ServicesData = [

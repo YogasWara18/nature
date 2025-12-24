@@ -63,39 +63,74 @@ export default function Contact() {
           <div className="mt-10">
             <div className="flex justify-between items-center flex-col lg:flex-row gap-15">
               <div className="w-full lg:w-1/2">
-                <Image 
-                src={contactImg}
-                alt="contactImg"
-                className="w-full h-full rounded-2xl object-cover"
+                <Image
+                  src={contactImg}
+                  alt="contactImg"
+                  className="w-full h-full rounded-2xl object-cover"
                 />
               </div>
               <div className="w-full lg:w-1/2">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div className="flex flex-col GolosText">
                     <label className="font-semibold mb-2">Full Name</label>
-                    <input type="text"  placeholder="Full Name*" className="bg-white border border-gray-300 font-semibold rounded-lg px-3 py-3 outline-none focus:border-(--prim) transition-all duration-300"/>
+                    <input
+                      type="text"
+                      placeholder="Full Name*"
+                      className="bg-white border border-gray-300 font-semibold rounded-lg px-3 py-3 outline-none focus:border-(--prim) transition-all duration-300"
+                    />
                   </div>
-                   <div className="flex flex-col GolosText">
+                  <div className="flex flex-col GolosText">
                     <label className="font-semibold mb-2">Phone</label>
-                    <input type="text"  placeholder="Phone Number*" className="bg-white border border-gray-300 font-semibold rounded-lg px-3 py-3 outline-none focus:border-(--prim) transition-all duration-300"/>
+                    <input
+                      type="text"
+                      placeholder="Phone Number*"
+                      className="bg-white border border-gray-300 font-semibold rounded-lg px-3 py-3 outline-none focus:border-(--prim) transition-all duration-300"
+                    />
                   </div>
-                   <div className="flex flex-col GolosText">
+                  <div className="flex flex-col GolosText">
                     <label className="font-semibold mb-2">Email Address</label>
-                    <input type="email"  placeholder="Email Address*" className="bg-white border border-gray-300 font-semibold rounded-lg px-3 py-3 outline-none focus:border-(--prim) transition-all duration-300"/>
+                    <input
+                      type="email"
+                      placeholder="Email Address*"
+                      className="bg-white border border-gray-300 font-semibold rounded-lg px-3 py-3 outline-none focus:border-(--prim) transition-all duration-300"
+                    />
                   </div>
-                   <div className="flex flex-col GolosText">
+                  <div className="flex flex-col GolosText">
                     <label className="font-semibold mb-2">Subject</label>
-                    <input type="text"  placeholder="I want to*" className="bg-white border border-gray-300 font-semibold rounded-lg px-3 py-3 outline-none focus:border-(--prim) transition-all duration-300"/>
+                    <input
+                      type="text"
+                      placeholder="I want to*"
+                      className="bg-white border border-gray-300 font-semibold rounded-lg px-3 py-3 outline-none focus:border-(--prim) transition-all duration-300"
+                    />
                   </div>
                 </div>
-                    <div className="flex flex-col GolosText mt-5">
-                    <label className="font-semibold mb-2">Your Message</label>
-                    <textarea placeholder="I want to*" className="bg-white border border-gray-300 font-semibold rounded-lg px-3 py-3 outline-none focus:border-(--prim) transition-all duration-300"></textarea>
+                <div className="flex flex-col GolosText mt-5">
+                  <label className="font-semibold mb-2">Your Message</label>
+                  <textarea
+                    placeholder="I want to*"
+                    rows={2}
+                    className="bg-white border border-gray-300 font-semibold rounded-lg px-3 py-3 outline-none focus:border-(--prim) transition-all duration-300"
+                  ></textarea>
+                </div>
+                <div className="mt-5">
+                  <button className="border border-gray-300 GolosText rounded-full px-4 py-2 hover:bg-(--prim) hover:text-white cursor hover:border-transparent transition-all duration-300">
+                    Send Message
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div className="contact-map h-[600px]">
+        <iframe
+          className="w-full rounded-2xl brightness-100 grayscale"
+          src="https://www.google.com/maps?q=45.519926,-122.7446722&hl=en&z=14&output=embed"
+          width="100%"
+          height="100%"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </>
   );

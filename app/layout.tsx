@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import { Audiowide, Cal_Sans, Golos_Text } from "next/font/google";
 import "./globals.css";
-import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
+import ClientLayout from "./Components/ClientLayout";
 
 const audiowide = Audiowide ({
   weight: "400",
@@ -41,9 +40,9 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${audiowide.variable} ${golostext.variable} ${calsans.variable}`}>
-        <Navbar/>
+        <ClientLayout>
         {children}
-        <Footer/>
+        </ClientLayout>        
       </body>
     </html>
   );

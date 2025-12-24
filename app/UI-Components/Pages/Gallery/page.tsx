@@ -21,6 +21,7 @@ import gallleryImg13 from "@/public/Banner-slide-1.jpg";
 import gallleryImg14 from "@/public/Banner-slide-1.jpg";
 import gallleryImg15 from "@/public/Banner-slide-1.jpg";
 import { useState } from "react";
+import Newsletter from "../../Index/Newsletter/page";
 
 export default function Gallery() {
   const [index, setIndex] = useState(-1);
@@ -149,7 +150,7 @@ export default function Gallery() {
           </div>
         </div>
 
-         <div className="flex flex-col lg:flex-row gap-5 mt-10">
+        <div className="flex flex-col lg:flex-row gap-5 mt-10">
           <div className="w-full lg:w-1/2">
             <div className="gallery-image" onClick={() => setIndex(10)}>
               <Image
@@ -193,6 +194,16 @@ export default function Gallery() {
           </div>
         </div>
       </div>
+
+      <Newsletter />
+
+      {/* Lightbox */}
+      <Lightbox
+        open={index >= 0}
+        index={index}
+        close={() => setIndex(-1)}
+        slides={images} 
+      />
     </>
   );
 }

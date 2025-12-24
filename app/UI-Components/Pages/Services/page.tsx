@@ -2,12 +2,12 @@
 
 import Link from "next/link";
 
-import serviceImg1 from "../public/Service-page-1.jpg";
-import serviceImg2 from "../public/Service-page-2.jpg";
-import serviceImg3 from "../public/Service-page-3.jpg";
-import serviceImg4 from "../public/Service-page-4.jpg";
-import serviceImg5 from "../public/Service-page-5.jpg";
-import serviceImg6 from "../public/Service-page-6.jpg";
+import serviceImg1 from "@/public/Service-page-1.jpg";
+import serviceImg2 from "@/public/Service-page-2.jpg";
+import serviceImg3 from "@/public/Service-page-3.jpg";
+import serviceImg4 from "@/public/Service-page-4.jpg";
+import serviceImg5 from "@/public/Service-page-5.jpg";
+import serviceImg6 from "@/public/Service-page-6.jpg";
 
 import Newsletter from "../../Index/Newsletter/page";
 

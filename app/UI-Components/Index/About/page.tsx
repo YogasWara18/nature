@@ -63,7 +63,7 @@ export default function About() {
                 <h2 className="text-5xl tracking-wider CalSans font-bold mb-6">
                     <CountUp
                     start={0}
-                    end={item.value}
+                    end={item.value ?? 0}
                     duration={2.5}
                     enableScrollSpy
                     />

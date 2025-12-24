@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 const PricingPlansData = [
   {
     id: "1",
@@ -79,9 +81,11 @@ export default function PricingPlans() {
                         </p>
                     ))}
                   </div>
+                  <Link href="/UI-Components/Pages/Contact">
                   <button className="border border-gray-300 GolosText rounded-full px-4 py-2 hover:bg-(--prim) hover:text-white cursor hover:border-transparent transition-all duration-300">
                     Start With Nature
                   </button>
+                  </Link>
                 </div>
               ))}
             </div>

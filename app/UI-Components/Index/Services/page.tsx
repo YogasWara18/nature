@@ -11,7 +11,7 @@ export default function Services() {
       <div className="px-[15%] lg:px[12%] pt-20 pb-60 service relative">
         <div className="flex flex-col lg:flex-row gap-10">
           <div className="w-full lg:w-1/3 title pt-9">
-            <span className="rounded-full title-span border border-gray-400 px-6 GolosText uppercase font-bold">
+            <span className="rounded-full hero-span border border-gray-400 px-6 GolosText uppercase font-bold">
               Our Services
             </span>
           </div>

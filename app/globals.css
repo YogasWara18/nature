@@ -597,6 +597,8 @@ body {
   z-index: -1;
 }
 
+
+/* Responsive Design */
 @media (max-width: 991px) {
   .hero {
     height: 100%;
@@ -607,68 +609,279 @@ body {
     top: 70%;
   }
 
-  .about{
+  /* Scale down hero background elements for tablet */
+  .hero-bg-elm {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-bg-elm2 {
+    width: 400px;
+    height: 350px;
+  }
+
+  .about {
     background-position: top center;
   }
 
-  .service:after{
+  .service:after {
     font-size: 8rem;
+    line-height: 6rem;
   }
 
-  .service:before{
+  .service:before {
     height: 350px;
     bottom: -10%;
     width: 500px;
   }
 
-  .service-img{
+  .service-img {
     transform: scale(1);
     opacity: 1;
     transition: var(--transition-slow);
   }
 
-  .expertise-card{
+  .expertise-card {
     margin: 0 !important;
   }
 
-  .expertise-slider{
+  /* Adjust expertise slider for tablet */
+  .expertise-slider {
     bottom: -20%;
     height: 550px;
+    width: 95%;
   }
 
-  .pricing-wrap{
+  .pricing-wrap {
     height: 300px;
   }
 
-  .team-content{
+  .team-content {
     bottom: -8%;
   }
 
   .team-wrapper .team-card:nth-child(2),
-  .team-wrapper .team-card:nth-child(5){
+  .team-wrapper .team-card:nth-child(5) {
     transform: translateY(0px);
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 768px) {
+  /* Additional tablet-specific optimizations */
   .hero {
-    margin-top: 10%;
+    margin-top: 12%;
+    min-height: 80vh;
+  }
+
+  .hero:after {
+    background-size: cover;
+  }
+
+  .hero-bg-elm {
+    width: 180px;
+    height: 180px;
+    left: 20%;
+  }
+
+  .hero-bg-elm2 {
+    display: none;
+  }
+
+  .hero-content-img {
+    top: 60% !important;
+    left: 80% !important;
+    width: 50px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .service:after {
+    font-size: 6rem;
+    line-height: 5rem;
+    bottom: -5%;
+  }
+
+  .service:before {
+    height: 250px;
+    width: 300px;
+    bottom: -8%;
+  }
+
+  .expertise-slider {
+    bottom: -15%;
+    height: 400px;
+    width: 100%;
+  }
+
+  .Paralex-content {
+    height: 60vh;
+  }
+
+  .testimonial-image {
+    height: 70vh;
+  }
+
+  .section-bg {
+    height: 350px;
+  }
+
+  .service-wrap {
+    height: 350px;
+  }
+
+  .pricing-wrap {
+    height: 250px;
+  }
+
+  .title:before {
+    height: 100px;
+    top: -15%;
+  }
+
+  .history-card:before {
+    top: 120px;
+  }
+
+  .history-card:after {
+    top: 130px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* Mobile-specific responsive adjustments */
+  .hero {
+    margin-top: 15%;
+    min-height: 70vh;
+  }
+
+  .hero-content-img {
+    top: 55% !important;
+    left: 85% !important;
+    width: 45px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+
+  .hero-bg-elm {
+    width: 120px;
+    height: 120px;
+    left: 50%;
+    top: 10%;
+  }
+
+  .hero-bg-elm2 {
+    display: none;
+  }
+
+  .service:before {
+    display: none;
+  }
+
+  /* Reduce font size for "Nature" text on mobile */
+  .service:after {
+    font-size: 4rem;
+    line-height: 3rem;
+    left: 5%;
+    bottom: 5%;
+  }
+
+  .expertise-slider {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    bottom: auto;
+    transform: none;
+    margin-top: 20px;
+  }
+
+  .expertise-card {
+    margin-bottom: 20px !important;
+  }
+
+  .Paralex-content {
+    height: 50vh;
+  }
+
+  .testimonial-image {
+    height: 50vh;
+  }
+
+  .section-bg {
+    height: 300px;
+  }
+
+  .service-wrap {
+    height: 300px;
+  }
+
+  .pricing-wrap {
+    height: 200px;
+  }
+
+  .title:before {
+    display: none;
+  }
+
+  .title:after {
+    height: 0.5px;
+  }
+
+  .history-card:before {
+    top: 80px;
+    width: 14px;
+    height: 14px;
+  }
+
+  .history-card:after {
+    top: 90px;
+    width: 100%;
+  }
+
+  .page404:after,
+  .page404:before {
+    background-size: 25%;
+  }
+
+  .partner-swiper {
+    padding: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small device optimization */
+  .hero {
+    margin-top: 20%;
+    min-height: 60vh;
+  }
+
+  .hero-span:after {
+    width: 6px;
+    height: 6px;
   }
 
   .hero-content-img {
     top: 50% !important;
+    left: 90% !important;
+    width: 40px;
+    height: 30px;
+    font-size: 1rem;
   }
 
-  .service:before{
-    display: none;
+  .hero-bg-elm {
+    width: 80px;
+    height: 80px;
+    top: 15%;
+    left: 50%;
   }
 
-  .expertise-slider{
-    position: relative;
-    width: 100%;
-    height: 400px;
+  .service:after {
+    font-size: 3rem;
+    line-height: 2.2rem;
+    left: 2%;
+    bottom: 10%;
   }
 
-
-
+  .about::before {
+    background-size: cover;
+  }
 }

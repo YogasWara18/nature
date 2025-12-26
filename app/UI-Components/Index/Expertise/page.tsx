@@ -48,7 +48,7 @@ export default function Expertise() {
   return (
     <>
       <div className="expertise bg-[#241c18]">
-        <div className="px-[8%] lg:px-[3%] md:py-22 pt-10 pb-10 md:pb-[35%] relative">
+        <div className="px-[8%] lg:px-[3%] md:py-22 pt-10 pb-10 md:pb-[30%] relative">
           <div className="flex flex-col gap-10">
             <div className="w-full">
               <span className="rounded-full text-white hero-span border border-gray-400 px-6 GolosText uppercase font-bold">
@@ -78,7 +78,7 @@ export default function Expertise() {
                     className="w-full h-full rounded-2xl"
                   />
                 </div>
-                <div className="expertise-info my-5">
+                <div className="expertise-info my-6">
                   <h1 className="text-3xl CalSans text-white border-b border-gray-500/50 pb-5 w-full lg:w-[80%]">{item.title}</h1>
                   <p className="text-gray-400 mt-3">{item.desc}</p>
                 </div>

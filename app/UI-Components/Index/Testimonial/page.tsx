@@ -52,7 +52,7 @@ const TestimonialData = [
 export default function Testimonial() {
   return (
     <>
-      <div className="testimonial flex flex-col-reverse lg:flex-row gap-5 bg-[#EEE]">
+      <div className="testimonial flex flex-col-reverse lg:flex-row gap-5 bg-[#EEE] mt-10">
         <div className="w-full lg:w-1/2 testimonial-image"></div>
         <div className="w-full lg:w-1/2 pe-[8%] lg:pe-[12%] ps-[8%] lg:ps-5 py-20 pb-0 md:pb-20">
           <div>

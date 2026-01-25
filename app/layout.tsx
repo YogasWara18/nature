@@ -22,7 +22,7 @@ const calsans = Cal_Sans ({
 });
 
 export const metadata: Metadata = {
-  title: "NATURE",
+  title: "Home Design & Interior Nature",
   description: "Designing Harmony with Nature",
    icons: {
     icon: "/navbar-logo.png", // atau "/favicon.ico"

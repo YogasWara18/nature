@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌿 Home Design & Interior Nature
+A Modern Interior Design Discovery Platform
 
-## Getting Started
+Website ini adalah platform katalog interior yang menggabungkan estetika desain hunian dengan elemen alam (Biophilic Design). Dibangun dengan Next.js 15+ untuk performa maksimal dan SEO yang optimal.
 
-First, run the development server:
+🚀 Fitur Utama
+App Router Architecture: Menggunakan struktur folder app/ untuk routing yang lebih cepat dan efisien.
 
-```bash
+Optimized Fonts: Menggunakan next/font untuk memuat font Geist secara lokal tanpa beban CLS (Cumulative Layout Shift).
+
+Responsive Nature Gallery: Galeri foto interior bertema alam yang responsif dan cepat.
+
+Server-Side Rendering (SSR): Memastikan konten desain cepat terindeks oleh mesin pencari.
+
+🛠️ Tech Stack
+Framework: Next.js (App Router)
+
+Language: TypeScript
+
+Styling: (Contoh: Tailwind CSS / CSS Modules)
+
+Deployment: Vercel
+
+🏃 Memulai Pengembangan
+Pertama, instal dependensi terlebih dahulu:
+
+Bash
+npm install
+# atau
+yarn install
+Kemudian, jalankan server pengembangan:
+
+Bash
 npm run dev
-# or
+# atau
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Buka http://localhost:3000 di browser Anda untuk melihat hasilnya. Anda bisa mulai mengubah desain dengan mengedit file app/page.tsx.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📁 Struktur Proyek
+Plaintext
+├── app/                 # Next.js App Router (Pages, Layouts, Components)
+│   ├── favicon.ico      # Icon aplikasi
+│   ├── layout.tsx       # Root layout
+│   └── page.tsx         # Halaman utama (Home)
+├── public/              # File statis (Gambar interior, logo)
+├── next.config.mjs      # Konfigurasi Next.js
+└── tailwind.config.ts   # Konfigurasi styling (jika digunakan)
+🌐 Deployment
+Cara termudah untuk mempublikasikan website Home Design ini adalah menggunakan Vercel:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Push kode Anda ke GitHub.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Impor repositori ke Vercel.
 
-## Learn More
+Klik Deploy.
 
-To learn more about Next.js, take a look at the following resources:
+Next.js akan secara otomatis melakukan optimasi gambar dan aset lainnya saat proses build.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📝 Catatan Tambahan
+Proyek ini dikembangkan dengan fokus pada User Experience (UX) yang menenangkan, sesuai dengan tema Interior Nature. Pastikan setiap aset gambar yang diunggah ke folder public/ telah dikompresi untuk menjaga kecepatan pemuatan halaman.
